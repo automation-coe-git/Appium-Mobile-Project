@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" name="Failed suite [Test]" parallel="classes" data-provider-thread-count="2">
+  <test name="TestClass(failed)" parallel="instances">
+    <classes>
+      <class name="com.coe.Tests.AppiumServerJava">
+        <methods>
+          <include name="launchWikipediaApp"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.coe.Tests.AppiumServerJava -->
+    </classes>
+  </test> <!-- TestClass(failed) -->
+</suite> <!-- Failed suite [Test] -->

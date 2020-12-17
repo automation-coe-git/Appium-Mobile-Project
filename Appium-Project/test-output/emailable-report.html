@@ -1,0 +1,252 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>TestNG:  Unit Test</title>
+<style type="text/css">
+table caption,table.info_table,table.result,table.passed,table.failed {margin-bottom:10px;border:1px solid #000099;border-collapse:collapse;empty-cells:show;}
+table.info_table td,table.info_table th,table.result td,table.result th,table.passed td,table.passed th,table.failed td,table.failed th {
+border:1px solid #000099;padding:.25em .5em .25em .5em
+}
+table.result th {vertical-align:bottom}
+tr.param th {padding-left:1em;padding-right:1em}
+tr.param td {padding-left:.5em;padding-right:2em}
+td.numi,th.numi,td.numi_attn {
+text-align:right
+}
+tr.total td {font-weight:bold}
+table caption {
+text-align:center;font-weight:bold;
+}
+table.passed tr.stripe td,table tr.passedodd td {background-color: #00AA00;}
+table.passed td,table tr.passedeven td {background-color: #33FF33;}
+table.passed tr.stripe td,table tr.skippedodd td {background-color: #cccccc;}
+table.passed td,table tr.skippedodd td {background-color: #dddddd;}
+table.failed tr.stripe td,table tr.failedodd td,table.result td.numi_attn {background-color: #FF3333;}
+table.failed td,table tr.failedeven td,table.result tr.stripe td.numi_attn {background-color: #DD0000;}
+tr.stripe td,tr.stripe th {background-color: #E6EBF9;}
+p.totop {font-size:85%;text-align:center;border-bottom:2px black solid}
+div.shootout {padding:2em;border:3px #4854A8 solid}
+</style>
+</head>
+<body>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr><th>Test</th><th class="numi">Methods<br/>Passed</th><th class="numi">Scenarios<br/>Passed</th><th class="numi"># skipped</th><th class="numi"># failed</th><th class="numi">Total<br/>Time</th><th class="numi">Included<br/>Groups</th><th class="numi">Excluded<br/>Groups</th></tr>
+<tr><td style="text-align:left;padding-right:2em">ParallelTestPixel3</td><td class="numi">0</td><td class="numi">0</td><td class="numi_attn">1</td><td class="numi">0</td><td class="numi">4.5 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr class="stripe"><td style="text-align:left;padding-right:2em">ParallelTestGalaxy10e</td><td class="numi">0</td><td class="numi">0</td><td class="numi">0</td><td class="numi_attn">1</td><td class="numi">35.5 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr class="total"><td>Total</td>
+<td class="numi">0</td><td class="numi">0</td><td class="numi_attn">1</td><td class="numi_attn">1</td><td class="numi">35.5 seconds</td><td colspan="2">&nbsp;</td></tr>
+</table>
+<table cellspacing="0" cellpadding="0" class="passed" id="summary">
+<tr><th>Class</th><th>Method</th><th># of<br/>Scenarios</th><th>Start</th><th>Time<br/>(ms)</th></tr>
+<tr><th colspan="4">ParallelTestPixel3 &#8212; failed (configuration methods)</th></tr>
+<tr class="failedodd"><td rowspan="2">com.browserstack.run_parallel_test.ParallelTest</td><td><a href="#m1"><b>setUp</b>  </a></td><td class="numi">1</td><td>1608122225211</td><td class="numi">0</td></tr><tr class="failedodd"><td><a href="#m2"><b>tearDown</b>  </a></td><td class="numi">1</td><td>1608122229735</td><td class="numi">0</td></tr>
+<tr><th colspan="4">ParallelTestPixel3 &#8212; skipped</th></tr>
+<tr class="skippedodd"><td rowspan="1">com.browserstack.run_parallel_test.ParallelTest</td><td><a href="#m3"><b>launchAndSearchWikipediaApp_BrowserStackAndriod</b>  </a></td><td class="numi">1</td><td>1608122229731</td><td class="numi">2</td></tr>
+<tr><th colspan="4">ParallelTestGalaxy10e &#8212; failed</th></tr>
+<tr class="failedodd"><td rowspan="1">com.browserstack.run_parallel_test.ParallelTest</td><td><a href="#m4"><b>launchAndSearchWikipediaApp_BrowserStackAndriod</b>  </a></td><td class="numi">1</td><td>1608122259371</td><td class="numi">508</td></tr>
+</table>
+<h1>ParallelTestPixel3</h1>
+<h2 id="m1">com.browserstack.run_parallel_test.ParallelTest:tearDown</h2>
+<div style="padding-left:3em">
+<p>null</p>
+com.browserstack.run_parallel_test.BrowserStackTestNGTest.tearDown(BrowserStackTestNGTest.java:71)
+<br/>at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+<br/>at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+<br/>at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+<br/>at java.lang.reflect.Method.invoke(Unknown Source)
+<br/>at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+<br/>at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
+<br/>at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
+<br/>at org.testng.internal.Invoker.invokeMethod(Invoker.java:786)
+<br/>at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+<br/>at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+<br/>at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+<br/>at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+<br/>at org.testng.TestRunner.privateRun(TestRunner.java:767)
+<br/>at org.testng.TestRunner.run(TestRunner.java:617)
+<br/>at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+<br/>at org.testng.SuiteRunner.access$000(SuiteRunner.java:37)
+<br/>at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:368)
+<br/>at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+<br/>at java.util.concurrent.FutureTask.run(Unknown Source)
+<br/>at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+<br/>at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+<br/>at java.lang.Thread.run(Unknown Source)
+<br/>1 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m2">com.browserstack.run_parallel_test.ParallelTest:setUp</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>0</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="1">
+<p>Unable to create a new remote session. Please check the server log for more details. Original error: [BROWSERSTACK_INVALID_OS_VERSION] OS version 9.1 is not supported for device google pixel 3. Supported OS versions for device google pixel 3 are: 10.0, 9.0. To know more, refer to our capability builder - https://www.browserstack.com/app-automate/capabilities (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 3.57 seconds
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;RAGHULAPTOP&apos;, ip: &apos;192.168.43.44&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_172&apos;
+Driver info: driver.version: AndroidDriver
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;RAGHULAPTOP&apos;, ip: &apos;192.168.43.44&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_172&apos;
+Driver info: driver.version: AndroidDriver</p>
+io.appium.java_client.remote.AppiumCommandExecutor$1.createSession(AppiumCommandExecutor.java:208)
+<br/>at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:217)
+<br/>at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+<br/>at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
+<br/>at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+<br/>at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+<br/>at io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:336)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+<br/>at io.appium.java_client.DefaultGenericMobileDriver.&lt;init&gt;(DefaultGenericMobileDriver.java:37)
+<br/>at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:88)
+<br/>at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:98)
+<br/>at io.appium.java_client.android.AndroidDriver.&lt;init&gt;(AndroidDriver.java:94)
+<br/>at com.browserstack.run_parallel_test.BrowserStackTestNGTest.setUp(BrowserStackTestNGTest.java:64)
+<br/>at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+<br/>at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+<br/>at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+<br/>at java.lang.reflect.Method.invoke(Unknown Source)
+<br/>at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+<br/>at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
+<br/>at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
+<br/>at org.testng.internal.Invoker.invokeMethod(Invoker.java:653)
+<br/>at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+<br/>at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+<br/>at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+<br/>at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+<br/>at org.testng.TestRunner.privateRun(TestRunner.java:767)
+<br/>at org.testng.TestRunner.run(TestRunner.java:617)
+<br/>at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+<br/>at org.testng.SuiteRunner.access$000(SuiteRunner.java:37)
+<br/>at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:368)
+<br/>at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+<br/>at java.util.concurrent.FutureTask.run(Unknown Source)
+<br/>at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+<br/>at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+<br/>at java.lang.Thread.run(Unknown Source)
+<br/>1 lines not shown
+<p>Caused by null</p>
+sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+<br/>at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+<br/>at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+<br/>at java.lang.reflect.Method.invoke(Unknown Source)
+<br/>at io.appium.java_client.remote.AppiumCommandExecutor$1.createSession(AppiumCommandExecutor.java:186)
+<br/>at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:217)
+<br/>at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+<br/>at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
+<br/>at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+<br/>at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+<br/>at io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:336)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+<br/>at io.appium.java_client.DefaultGenericMobileDriver.&lt;init&gt;(DefaultGenericMobileDriver.java:37)
+<br/>at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:88)
+<br/>at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:98)
+<br/>at io.appium.java_client.android.AndroidDriver.&lt;init&gt;(AndroidDriver.java:94)
+<br/>at com.browserstack.run_parallel_test.BrowserStackTestNGTest.setUp(BrowserStackTestNGTest.java:64)
+<br/>at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+<br/>at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+<br/>at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+<br/>at java.lang.reflect.Method.invoke(Unknown Source)
+<br/>at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+<br/>at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
+<br/>at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
+<br/>at org.testng.internal.Invoker.invokeMethod(Invoker.java:653)
+<br/>at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+<br/>at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+<br/>at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+<br/>at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+<br/>at org.testng.TestRunner.privateRun(TestRunner.java:767)
+<br/>at org.testng.TestRunner.run(TestRunner.java:617)
+<br/>at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+<br/>at org.testng.SuiteRunner.access$000(SuiteRunner.java:37)
+<br/>at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:368)
+<br/>at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+<br/>at java.util.concurrent.FutureTask.run(Unknown Source)
+<br/>at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+<br/>at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+<br/>at java.lang.Thread.run(Unknown Source)
+<br/>1 lines not shown
+<p>Caused by [BROWSERSTACK_INVALID_OS_VERSION] OS version 9.1 is not supported for device google pixel 3. Supported OS versions for device google pixel 3 are: 10.0, 9.0. To know more, refer to our capability builder - https://www.browserstack.com/app-automate/capabilities (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 3.57 seconds
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;RAGHULAPTOP&apos;, ip: &apos;192.168.43.44&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_172&apos;
+Driver info: driver.version: AndroidDriver</p>
+sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+<br/>at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+<br/>at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+<br/>at java.lang.reflect.Constructor.newInstance(Unknown Source)
+<br/>at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+<br/>at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+<br/>at org.openqa.selenium.remote.JsonWireProtocolResponse.lambda$errorHandler$0(JsonWireProtocolResponse.java:54)
+<br/>at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+<br/>at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+<br/>at java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+<br/>at java.util.Spliterators$ArraySpliterator.tryAdvance(Unknown Source)
+<br/>at java.util.stream.ReferencePipeline.forEachWithCancel(Unknown Source)
+<br/>at java.util.stream.AbstractPipeline.copyIntoWithCancel(Unknown Source)
+<br/>at java.util.stream.AbstractPipeline.copyInto(Unknown Source)
+<br/>at java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
+<br/>at java.util.stream.FindOps$FindOp.evaluateSequential(Unknown Source)
+<br/>at java.util.stream.AbstractPipeline.evaluate(Unknown Source)
+<br/>at java.util.stream.ReferencePipeline.findFirst(Unknown Source)
+<br/>at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+<br/>at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+<br/>at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+<br/>at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+<br/>at java.lang.reflect.Method.invoke(Unknown Source)
+<br/>at io.appium.java_client.remote.AppiumCommandExecutor$1.createSession(AppiumCommandExecutor.java:186)
+<br/>at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:217)
+<br/>at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+<br/>at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
+<br/>at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+<br/>at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+<br/>at io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:336)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+<br/>at io.appium.java_client.DefaultGenericMobileDriver.&lt;init&gt;(DefaultGenericMobileDriver.java:37)
+<br/>at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:88)
+<br/>at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:98)
+<br/>at io.appium.java_client.android.AndroidDriver.&lt;init&gt;(AndroidDriver.java:94)
+<br/>at com.browserstack.run_parallel_test.BrowserStackTestNGTest.setUp(BrowserStackTestNGTest.java:64)
+<br/>at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+<br/>at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+<br/>at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+<br/>at java.lang.reflect.Method.invoke(Unknown Source)
+<br/>at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+<br/>at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
+<br/>at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
+<br/>at org.testng.internal.Invoker.invokeMethod(Invoker.java:653)
+<br/>at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+<br/>at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+<br/>at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+<br/>at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+<br/>at org.testng.TestRunner.privateRun(TestRunner.java:767)
+<br/>at org.testng.TestRunner.run(TestRunner.java:617)
+<br/>at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+<br/>at org.testng.SuiteRunner.access$000(SuiteRunner.java:37)
+<br/>at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:368)
+<br/>at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+<br/>at java.util.concurrent.FutureTask.run(Unknown Source)
+<br/>at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+<br/>at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+<br/>at java.lang.Thread.run(Unknown Source)
+<br/>1 lines not shown
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m3">com.browserstack.run_parallel_test.ParallelTest:launchAndSearchWikipediaApp_BrowserStackAndriod</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h1>ParallelTestGalaxy10e</h1>
+<h2 id="m4">com.browserstack.run_parallel_test.ParallelTest:launchAndSearchWikipediaApp_BrowserStackAndriod</h2>
+<div style="padding-left:3em">
+<p>null</p>
+com.browserstack.run_parallel_test.ParallelTest.launchAndSearchWikipediaApp_BrowserStackAndriod(ParallelTest.java:27)
+<br/>21 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+</body></html>

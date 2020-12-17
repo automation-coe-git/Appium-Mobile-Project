@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" name="Failed suite [Parallel]" parallel="tests">
+  <parameter name="deviceIndex" value="1"/>
+  <test name="ParallelTestPixel3(failed)" parallel="tests">
+    <parameter name="deviceIndex" value="0"/>
+    <classes>
+      <class name="com.browserstack.run_parallel_test.ParallelTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="launchAndSearchWikipediaApp_BrowserStackAndriod"/>
+        </methods>
+      </class> <!-- com.browserstack.run_parallel_test.ParallelTest -->
+    </classes>
+  </test> <!-- ParallelTestPixel3(failed) -->
+  <test name="ParallelTestGalaxy10e(failed)" parallel="tests">
+    <parameter name="deviceIndex" value="1"/>
+    <classes>
+      <class name="com.browserstack.run_parallel_test.ParallelTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="launchAndSearchWikipediaApp_BrowserStackAndriod"/>
+        </methods>
+      </class> <!-- com.browserstack.run_parallel_test.ParallelTest -->
+    </classes>
+  </test> <!-- ParallelTestGalaxy10e(failed) -->
+</suite> <!-- Failed suite [Parallel] -->
